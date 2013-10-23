@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<header>
+  <div class="container">
+    <a class="logo" href="/index.html">
+     <img src="/img/logo.png">
+   </a>
+   <nav>
+    <ul>
+       <li><a 
+       {% if page.url == "/index.html" %}
+       class="active" 
+       {% endif %}
+       href="/index.html">Home</a></li>
+          <li><span class="divider">/</span></li>
+          <li><a 
+          {% if page.url == "/team.html" %}
+       class="active" 
+       {% endif %}
+          href="/team.html">Team</a></li>
+          <li><span class="divider">/</span></li>
+          <li><a 
+          {% if page.url == "/teaching.html" %}
+       class="active" 
+       {% endif %}
+           href="/teaching.html">Teaching</a></li>
+          <li><span class="divider">/</span></li>
+          <li><a 
+          {% if page.url == "/publications.html" %}
+       class="active" 
+       {% endif %}
+           href="/publications.html">Publications</a></li>
+          <li><span class="divider">/</span></li>
+          <li><a 
+          {% if page.url == "/notes.html" %}
+       class="active" 
+       {% endif %}
+           href="/notes.html">Notes</a></li>
+    </ul>
+  </nav>
+</div>
+</header>
+<section>
+{{ content }}
+</section>
